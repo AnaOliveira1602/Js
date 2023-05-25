@@ -1,15 +1,16 @@
 const express = require("express");
-const rotas = express.Router();
-const clienteController = require("./controller/clienteController");
-const vendaController = require("./controller/vendaController")
+const router = express.Router();
+const pessoaController = require("./controller/pessoaController");
 
-rotas.get('/Cliente',clienteController.read);
-rotas.post('/Cliente',clienteController.create);
-rotas.delete('/Cliente/:id',clienteController.delete);
-rotas.post('/Cliente/:id',clienteController.update);
+// Rota para enviar o formulário
+router.post('/enviar-formulario', pessoaController.enviarFormulario);
 
-rotas.get('/Venda',vendaController.read);
-rotas.post('/Venda', vendaController.create);
-rotas.delete('/Venda/:id',vendaController.delete);
-rotas.post('/Venda/:id',vendaController.update);
-module.exports = rotas;
+// Rota para obter os cadastros antigos
+/*router.get('/cadastros', pessoaController.obterCadastros);*/
+
+module.exports = router;
+
+
+
+// link do video do cara do youtube:
+//https://youtu.be/p6oubMfuNto

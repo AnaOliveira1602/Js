@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: rgb(207, 90, 110);
+    border-radius: 10px;
+    width: 400px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.header{
+    background-color: rgb(175, 95, 175);
+    padding: 20px;
+}
+
+.form{
+    padding: 20px;
+}
+
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input{
+    border: 2px solid black;
+    display: block;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+}
+
+.form-control small{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.cadastros{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.cadastros label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.cadastros input{
+    border: 2px solid black;
+    display: block;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+}
+
+.cadastros small{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form button{
+    background-color: rgb(175, 95, 175);
+    border: 2px solid black;
+    color: black;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.form-control.error small{
+    visibility: visible;
+    color: rgb(124, 3, 3);
+}

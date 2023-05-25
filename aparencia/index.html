@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Mostrar usuario.</h2>
+        </div>
+
+        <form id="form" class="form">
+            <div class="form-control">
+                <label for="username">Nome de usuario: </label>
+                <input type="text" id="username" placeholder="Digite o nome de usuario..." />
+                <small>Nome invalido.</small>
+            </div>
+
+            <div class="form-control">
+                <label for="CPF">CPF do usuario: </label>
+                <input type="text" id="CPF" placeholder="Digite o CPF do usuario..." />
+                <small>CPF invalido.</small>
+            </div>
+
+            <button type="submit">Enviar</button>
+
+            <div class="cadastros">
+                <label for="cadastros">Usuarios ja cadastrados: </label>
+                <input type="text" id="cadastros" placeholder="" />
+                <small></small>
+            </div>
+        </form>
+    </div>
+
+    <script src="./script.js"></script>  
+
+</body>
+</html>

@@ -2,8 +2,10 @@ const express = require("express");
 const app = express();
 const rotas = require("./rotas");
 
+
 app.use(express.json());
 app.use(rotas);
-require = require("./config/dbConfig");
+require("./config/dbconfig");
 
-app.listen(8081);
+
+app.listen(8085);
